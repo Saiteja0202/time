@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    display: border-box;
+    
+}
+.container {
+    background-image: url("https://w.forfun.com/fetch/6d/6dc5134d6bfd139ddeacaf7f32770766.jpeg");
+    height: 100vh;
+    background-size: cover;
+    
+}
+.container1 {
+    width: 500px;
+    height: 90px;
+    padding: 100px;
+    text-align: center;
+    color:white;
+    background-color: transparent;
+    margin: 45px;
+    margin-left: 250px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 10px;
+}
+.spans {
+    font-size: 60px;
+    
+}

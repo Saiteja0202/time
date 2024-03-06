@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://svgsilh.com/svg/1300646.svg">
+    <title>Local Time</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <div class="container1" style="box-shadow: 5px 5px 5px 5px black;">
+            <div>
+            <span style="font-size: 60px;padding-right:20px;">Date :-</span>
+            <span class="spans" id="dd">00</span>
+            <span class="spans" style="padding-left: 14px;padding-right: 14px;">-</span>
+            <span class="spans" id="mm">00</span>
+            <span class="spans" style="padding-left: 14px;padding-right: 14px;">-</span>
+            <span class="spans" id="yy">00</span>
+            </div>
+            <div>
+            <span style="font-size: 60px;padding-right:20px;">Time :-</span>
+            <span class="spans" id="hrs">00</span>
+            <span class="spans" style="padding-left: 14px;padding-right: 14px;">:</span>
+            <span class="spans" id="min">00</span>
+            <span class="spans" style="padding-left: 14px;padding-right: 14px;">:</span>
+            <span class="spans" id="sec">00</span>
+            </div>
+        </div>
+        
+        
+    </div>
+<script>
+    let hrs=document.getElementById("hrs");
+    let min=document.getElementById("min");
+    let sec=document.getElementById("sec");
+    let dd=document.getElementById("dd");
+    let mm=document.getElementById("mm");
+    let yy=document.getElementById("yy");
+    setInterval(()=>{
+    let presenttime=new Date();
+    hrs.innerHTML=presenttime.getHours();
+    min.innerHTML=presenttime.getMinutes();
+    sec.innerHTML=presenttime.getSeconds();
+    dd.innerHTML=presenttime.getDate();
+    mm.innerHTML=presenttime.getMonth();
+    yy.innerHTML= "2024";
+    },1000)
+</script>
+</body>
+</html>
